@@ -1,0 +1,20 @@
+# Dugeon Master Guide
+#The Project covers the needs for a Dungeon Master
+## I built this for those who take on the role of a Dungeon Master may have an easier time managing the general needs of their campaign.
+## All 3 files are need. The main file being "DungeonMasterGuide" This part is in the main class that navigates you to your selected scene.
+ rbNPC.setOnAction(e -> {
+            if (rbNPC.isSelected()) {
+                character.raceName(primaryStage);
+            }
+        });
+		rbEncounter.setOnAction(e -> {
+            if (rbEncounter.isSelected()) {
+				Tundra tundra = new Tundra();
+				tundra.displayEncounters(primaryStage);
+            }
+        });
+
+##I run the code through javafx and use JUnit4 to test it
+## I did this program by myself but others can change it to how they see fit. 
+##For instance in Wilderness encounter it is specifically for the campaign "Icewind Dale" so it will only generate encounters from there 
+##but can be rearranged to fit your needs.
